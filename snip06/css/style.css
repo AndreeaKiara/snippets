@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto-Sans", sans-serif;
+  font-size: 16px;
+  background-color: #6f2962;
+}
+
+.float-left {
+  float: left;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.product-tile {
+  width: 500px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.product-tile header h1 {
+  font-size: 16px;
+}
+
+.product-tile picture {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+
+.product-tile picture a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffefef;
+  border-radius: 12px;
+}
+
+.product-tile picture img {
+  width: 85%;
+}
+
+.product-tile .product-tile-controls {
+  margin-top: 16px;
+}
+
+.product-tile .product-tile-controls .product-tile-pricing {
+  margin-top: 16px;
+  color: #3de264;
+  font-weight: bold;
+}
+
+.product-tile .product-tile-controls .remove {
+  cursor: pointer;
+  background-color: #e66469;
+  border: 0;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.qty-controls {
+  display: inline-flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.qty-controls button {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  background-color: #e4e4e4;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.decoration {
+  width: 100vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid #6f456d;
+  position: absolute;
+  left: -50%;
+  bottom: -100%;
+  z-index: 1;
+}

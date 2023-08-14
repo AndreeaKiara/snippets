@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto-Sans", sans-serif;
+  font-size: 16px;
+  background-color: #eff2f7;
+}
+
+.social-authentication {
+  box-shadow: 1px 2px 5px #d6d4d5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.social-authentication h1 {
+  font-size: 16px;
+}
+
+.social-authentication ul {
+  display: inline-flex;
+  gap: 32px;
+}
+
+.social-authentication .active button,
+.social-authentication button:hover {
+  background-color: #fff;
+  box-shadow: 0px 2px 2px #d6d4d5;
+  padding: 4px;
+}
+
+.social-authentication .ative button img,
+.social-authentication button:hover img {
+  transform: scale(1.2);
+}
+
+.social-authentication button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  transition: transform 0.2s linear, background-color 0.2s linear;
+}
+
+.social-authentication button img {
+  transition: transform 0.2s linear;
+}
